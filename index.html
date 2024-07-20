@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="list-sec">
+        <div class="form-all">
+            <div class="form-head">To-Do List</div>
+            <form name="todolistform">
+                <div class="row">
+                    <input name="newtask" type="text" placeholder="Add some task" autofocus size="30">
+                    <button class="add" onclick="addtask()">Add</button>
+                </div>
+                <ul  class="addinto">
+                    <!-- <li class="task-li">Buy Things<button class="add" onclick="deletetask()">Delete</button></li> -->
+                </ul>
+                </div>
+            </form>
+         </div>
+    </section>
+    <script>
+        function addtask(){
+            let newlist = document.todolistform.newtask.value
+            let li = document.createElement("li")
+            li.textContent=newlist
+            let addinto = document.getElementById("addinto")
+            allinto.appendchild(li)
+        }
+        // function deletetask(){
+
+        // }
+    </script>
+</body>
+</html>

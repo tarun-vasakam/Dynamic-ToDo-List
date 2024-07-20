@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-all{
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(250, 250, 140);
+}
+.form-head{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.699);
+}
+form{
+    padding: 25px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 400px;
+    width: 400px; 
+}
+.row{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    border-radius: 4px;
+    padding: 0.8em;
+}
+input:focus{
+    background-color: rgb(216, 213, 213);
+    outline: none;
+}
+button{
+    border: none;
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 0px 18px;
+    border-radius: 4px;
+    background-color: rgb(69, 69, 238);
+    color: white;
+}
+.addinto{
+    display: flex;
+    justify-content: center;
+}
+.task-li{
+    padding: 10px 0px;
+    font-size: 25px ;
+}
