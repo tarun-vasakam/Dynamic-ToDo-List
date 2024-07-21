@@ -10,29 +10,16 @@
     <section class="list-sec">
         <div class="form-all">
             <div class="form-head">To-Do List</div>
-            <form name="todolistform">
+            <div class="todolistform">
                 <div class="row">
-                    <input name="newtask" type="text" placeholder="Add some task" autofocus size="30">
-                    <button class="add" onclick="addtask()">Add</button>
+                    <input class="inputbox" type="text" placeholder="Add a task" autofocus size="35">
+                    <button class="add-btn" onclick="addtask()">Add</button>
                 </div>
                 <ul  class="addinto">
-                    <!-- <li class="task-li">Buy Things<button class="add" onclick="deletetask()">Delete</button></li> -->
                 </ul>
-                </div>
-            </form>
+            </div>
          </div>
     </section>
-    <script>
-        function addtask(){
-            let newlist = document.todolistform.newtask.value
-            let li = document.createElement("li")
-            li.textContent=newlist
-            let addinto = document.getElementById("addinto")
-            allinto.appendchild(li)
-        }
-        // function deletetask(){
-
-        // }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
